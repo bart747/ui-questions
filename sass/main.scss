@@ -1,0 +1,167 @@
+$green:           #393;
+$blue:            #3355ff;
+$blue-light:      #44aaff;
+$blue-dark:       #2233aa;
+$orange:          #ec4422;
+
+$radius:           2px;
+
+html {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+ margin: 0.5em; 
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:active, &:hover {
+    color: $orange;
+  }
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2;
+  text-align: center;
+  margin: 2em auto 1.5em;
+}
+
+.wrapper {
+  margin: 4em auto;
+  max-width: 42em;
+}
+
+.data-earlyload {
+  display: none;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+/*
+  animation-duration: 0.2s;
+  animation-name: appear;
+  animation-timing-function: ease-in;
+*/
+}
+
+.note {
+  margin: 2em 0;
+  animation-name: appear;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in;
+}
+
+.tagline {
+  color: #777;
+}
+
+.highlight {
+  color: #000;
+  font-weight: bold;
+}
+
+.menu {
+  text-align: center;
+  margin: 2em auto;
+}
+
+.menu-title {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.subcont-secondary.underline {
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid dotted;
+}
+
+button,
+.btn {
+  font-size: 1em;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  background: $blue;
+  border: solid $blue;
+  border-width: 3px;
+  border-radius: $radius;
+  outline: none; 
+  padding: 0.4em 1em;
+  text-align: center;
+  margin: 0.25em 0.125em;
+  max-width: 12em;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:active { 
+    background: lighten($blue-dark, 10%);
+  }
+  &:active {
+    background: $blue-dark;
+    
+  }
+  &:focus {
+    outline: none;
+    background: $blue-dark;
+  }
+}
+
+.btn-menu {
+  width: 8em;
+}
+
+.btn-active {
+  background: $blue-dark;
+  border-color: $blue-dark;
+}
+
