@@ -1,3 +1,5 @@
+
+$grey:            #777;
 $green:           #393;
 $blue:            #3355ff;
 $blue-light:      #44aaff;
@@ -65,11 +67,11 @@ h1 {
   font-size: 2em;
   line-height: 1.2;
   text-align: center;
-  margin: 2em auto 1.5em;
+  margin: 1.5em auto;
 }
 
 .wrapper {
-  margin: 4em auto;
+  margin: 3em auto 5em;
   max-width: 42em;
 }
 
@@ -101,7 +103,7 @@ h1 {
 }
 
 .tagline {
-  color: #777;
+  color: $grey;
 }
 
 .highlight {
@@ -111,12 +113,18 @@ h1 {
 
 .menu {
   text-align: center;
-  margin: 2em auto;
+  margin: 3em auto;
 }
 
 .menu-title {
   font-size: 0.9em;
-  color: #777;
+  color: $grey;
+}
+
+.author {
+  text-align: center; 
+  font-size: 0.9em;
+  color: $grey;
 }
 
 .subcont-secondary.underline {
